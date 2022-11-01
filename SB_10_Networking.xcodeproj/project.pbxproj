@@ -15,6 +15,7 @@
 		BF80EDBF29119CF6001DE532 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDBE29119CF6001DE532 /* UserActionCell.swift */; };
 		BF80EDC129119E18001DE532 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */; };
 		BF80EDC32911A694001DE532 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC22911A694001DE532 /* ImageViewController.swift */; };
+		BF80EDC52911AD33001DE532 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC42911AD33001DE532 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF80EDBE29119CF6001DE532 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		BF80EDC22911A694001DE532 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		BF80EDC42911AD33001DE532 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BF80EDBE29119CF6001DE532 /* UserActionCell.swift */,
 				BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */,
 				BF80EDC22911A694001DE532 /* ImageViewController.swift */,
+				BF80EDC42911AD33001DE532 /* Course.swift */,
 			);
 			path = SB_10_Networking;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF80EDC52911AD33001DE532 /* Course.swift in Sources */,
 				BF80EDBF29119CF6001DE532 /* UserActionCell.swift in Sources */,
 				BF80EDC129119E18001DE532 /* MainCollectionViewController.swift in Sources */,
 				BF80EDC32911A694001DE532 /* ImageViewController.swift in Sources */,

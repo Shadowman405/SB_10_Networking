@@ -99,22 +99,50 @@ extension MainCollectionViewController {
  // MARK: - Networking
     
     private func exampleOnePressed() {
-        
+        guard let url = URL(string: URLExamples.exampleOne.rawValue) else {return}
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            
+        }.resume()
     }
     
     
     private func exampleTwoPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleTwo.rawValue) else {return}
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            
+        }.resume()
     }
     
     
     private func exampleThreePressed() {
-        
+        guard let url = URL(string: URLExamples.exampleThree.rawValue) else {return}
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            
+        }.resume()
     }
     
     
     private func exampleFourPressed() {
-        
+        guard let url = URL(string: URLExamples.exampleFour.rawValue) else {return}
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            
+        }.resume()
     }
     
 }
