@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Course: Decodable {
+struct Course: Codable {
     let id: Int
     let name: String
     let link: String

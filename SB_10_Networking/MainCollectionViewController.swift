@@ -128,6 +128,16 @@ extension MainCollectionViewController {
                 return
             }
             
+            do {
+                let decoder = JSONDecoder()
+                let course = try decoder.decode([Course].self, from: data)
+                self.successAlert()
+                print(course[0])
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+            
         }.resume()
     }
     
