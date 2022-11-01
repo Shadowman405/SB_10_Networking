@@ -106,6 +106,16 @@ extension MainCollectionViewController {
                 return
             }
             
+            do {
+                let decoder = JSONDecoder()
+                let course = try decoder.decode(Course.self, from: data)
+                self.successAlert()
+                print("\(course.name)\n\(course.link)\n\(course.imageUrl)\n\(course.number_of_lessons)\n\(course.number_of_tests)")
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+            
         }.resume()
     }
     
