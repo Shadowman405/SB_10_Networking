@@ -17,13 +17,11 @@ class MainCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
     }
 
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return userAction.count
     }
 
@@ -32,6 +30,19 @@ class MainCollectionViewController: UICollectionViewController {
         cell.userActionLbl.text = userAction[indexPath.item].rawValue
     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let action = userAction[indexPath.item]
+        
+        switch action {
+            case .downloadImgae: performSegue(withIdentifier: "showImage", sender: nil)
+            case .exampleOne: exampleOnePressed()
+            case .exampleTwo: exampleTwoPressed()
+            case .exampleThree: exampleThreePressed()
+            case .exampleFour: exampleFourPressed()
+            case .ourCourses: performSegue(withIdentifier: "showCourses", sender: nil)
+        }
     }
 
 }

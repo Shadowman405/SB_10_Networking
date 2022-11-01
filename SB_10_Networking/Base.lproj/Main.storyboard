@@ -32,6 +32,7 @@
                             <outlet property="delegate" destination="9j0-RN-NnT" id="KJc-KG-tvZ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="9jD-96-hxo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgf-7p-aVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,9 +45,16 @@
                     <view key="view" contentMode="scaleToFill" id="LJQ-Sw-BD4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-dZ-0Ey">
+                                <rect key="frame" x="160" y="392" width="71" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a08-fc-uWK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bjx-7k-phE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hes-LS-tD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,10 +108,14 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="oFv-gZ-DND"/>
+                    <connections>
+                        <segue destination="5yz-RC-7iO" kind="show" identifier="showImage" id="UU7-yz-H0f"/>
+                        <segue destination="9j0-RN-NnT" kind="show" identifier="showCourses" id="bde-HG-qXB"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4w-Av-GOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970.7692307692307" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="2060" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OMB-VO-Ot3">
