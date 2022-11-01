@@ -15,3 +15,10 @@ struct Course: Codable {
     let number_of_lessons: Int
     let number_of_tests: Int
 }
+
+struct WebsiteDescription: Codable {
+    let courses: [Course]
+    let websiteDescription: String
+    let websiteName: String
+}
+
