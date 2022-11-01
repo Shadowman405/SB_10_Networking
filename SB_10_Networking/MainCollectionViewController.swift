@@ -7,6 +7,24 @@
 
 import UIKit
 
+enum URLExamples: String {
+    case imageURL = "https://m.media-amazon.com/images/M/MV5BNjQ1NDk2Njk4Ml5BMl5BanBnXkFtZTgwNjMzNDk0MDI@._V1_.jpg"
+    case exampleOne = "https://swiftbook.ru//wp-content/uploads/api/api_course"
+    case exampleTwo = "https://swiftbook.ru//wp-content/uploads/api/api_courses"
+    case exampleThree = "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
+    case exampleFour = "https://swiftbook.ru//wp-content/uploads/api/api_missing_or_wrong_fields"
+}
+
+
+enum UserActions: String, CaseIterable {
+    case downloadImgae = "Download Image"
+    case exampleOne = "Example One"
+    case exampleTwo = "Example Two"
+    case exampleThree = "Example Three"
+    case exampleFour = "Example Four"
+    case ourCourses = "Our Courses"
+}
+
 private let reuseIdentifier = "Cell"
 
 class MainCollectionViewController: UICollectionViewController {
@@ -51,23 +69,6 @@ class MainCollectionViewController: UICollectionViewController {
 
 extension MainCollectionViewController {
     
-    enum URLExamples: String {
-        case imageURL = "https://m.media-amazon.com/images/M/MV5BNjQ1NDk2Njk4Ml5BMl5BanBnXkFtZTgwNjMzNDk0MDI@._V1_.jpg"
-        case exampleOne = "https://swiftbook.ru//wp-content/uploads/api/api_course"
-        case exampleTwo = "https://swiftbook.ru//wp-content/uploads/api/api_courses"
-        case exampleThree = "https://swiftbook.ru//wp-content/uploads/api/api_website_description"
-        case exampleFour = "https://swiftbook.ru//wp-content/uploads/api/api_missing_or_wrong_fields"
-    }
-    
-    
-    enum UserActions: String, CaseIterable {
-        case downloadImgae = "Download Image"
-        case exampleOne = "Example One"
-        case exampleTwo = "Example Two"
-        case exampleThree = "Example Three"
-        case exampleFour = "Example Four"
-        case ourCourses = "Our Courses"
-    }
     
 // MARK: - Alert Controllers
     
