@@ -172,6 +172,16 @@ extension MainCollectionViewController {
                 return
             }
             
+            do {
+                let decoder = JSONDecoder()
+                let websiteDescr = try decoder.decode(WebsiteDescription.self, from: data)
+                self.successAlert()
+                print(websiteDescr.websiteDescription)
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+            
         }.resume()
     }
     
