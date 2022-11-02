@@ -22,10 +22,13 @@ class CourseTableViewCell: UITableViewCell {
         testsLbl.text = "Number of tests: \(course.number_of_tests ?? 0)"
         
         guard let url = URL(string: course.imageUrl ?? "") else {return}
-        guard let imageData = try? Data(contentsOf: url) else { return }
-        
-        DispatchQueue.main.async {
-            self.courseImage.image = UIImage(data: imageData)
+
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: url) else { return }
+            
+            DispatchQueue.main.async {
+                self.courseImage.image = UIImage(data: imageData)
+            }
         }
     }
 
