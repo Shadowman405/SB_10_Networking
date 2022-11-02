@@ -25,7 +25,6 @@ class CourseTableViewCell: UITableViewCell {
 
         DispatchQueue.global().async {
             guard let imageData = try? Data(contentsOf: url) else { return }
-            
             DispatchQueue.main.async {
                 self.courseImage.image = UIImage(data: imageData)
             }
