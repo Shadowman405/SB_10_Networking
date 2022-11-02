@@ -8,6 +8,8 @@
 import UIKit
 
 class CoursesTableViewController: UITableViewController {
+    
+    private var courses: [Course] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,35 +18,18 @@ class CoursesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return courses.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CourseTableViewCell
+        let course = courses[indexPath.row]
+        cell.configCell(with: course)
 
         return cell
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -57,11 +42,11 @@ extension CoursesTableViewController {
                 print(error?.localizedDescription ?? "error")
                 return
             }
-            
+        
             do {
                 let decoder = JSONDecoder()
-                let course = try decoder.decode([Course].self, from: data)
-                print(course[0])
+                self.courses = try decoder.decode([Course].self, from: data)
+                print("success")
             } catch let error {
                 print(error.localizedDescription)
             }

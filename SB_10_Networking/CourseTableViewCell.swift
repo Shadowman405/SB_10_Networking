@@ -16,16 +16,17 @@ class CourseTableViewCell: UITableViewCell {
     @IBOutlet weak var testsLbl: UILabel!
     
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configCell(with course: Course) {
+        courseNameLbl.text = course.name
+        lessonLbl.text = "Number of lessons: \(course.number_of_lessons ?? 0)"
+        testsLbl.text = "Number of tests: \(course.number_of_tests ?? 0)"
+        
+        guard let url = URL(string: course.imageUrl ?? "") else {return}
+        guard let imageData = try? Data(contentsOf: url) else { return }
+        
+        DispatchQueue.main.async {
+            self.courseImage.image = UIImage(data: imageData)
+        }
     }
 
 }
