@@ -16,6 +16,8 @@
 		BF80EDC129119E18001DE532 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */; };
 		BF80EDC32911A694001DE532 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC22911A694001DE532 /* ImageViewController.swift */; };
 		BF80EDC52911AD33001DE532 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC42911AD33001DE532 /* Course.swift */; };
+		BF80EDC729130892001DE532 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC629130891001DE532 /* CourseTableViewCell.swift */; };
+		BF80EDC9291308F2001DE532 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDC8291308F1001DE532 /* CoursesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		BF80EDC22911A694001DE532 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		BF80EDC42911AD33001DE532 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		BF80EDC629130891001DE532 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		BF80EDC8291308F1001DE532 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				BF80EDAA29119BCE001DE532 /* AppDelegate.swift */,
 				BF80EDAC29119BCE001DE532 /* SceneDelegate.swift */,
 				BF80EDB029119BCE001DE532 /* Main.storyboard */,
+				BF80EDC8291308F1001DE532 /* CoursesTableViewController.swift */,
 				BF80EDB329119BD0001DE532 /* Assets.xcassets */,
 				BF80EDB529119BD0001DE532 /* LaunchScreen.storyboard */,
 				BF80EDB829119BD0001DE532 /* Info.plist */,
@@ -72,6 +77,7 @@
 				BF80EDC029119E18001DE532 /* MainCollectionViewController.swift */,
 				BF80EDC22911A694001DE532 /* ImageViewController.swift */,
 				BF80EDC42911AD33001DE532 /* Course.swift */,
+				BF80EDC629130891001DE532 /* CourseTableViewCell.swift */,
 			);
 			path = SB_10_Networking;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 				BF80EDBF29119CF6001DE532 /* UserActionCell.swift in Sources */,
 				BF80EDC129119E18001DE532 /* MainCollectionViewController.swift in Sources */,
 				BF80EDC32911A694001DE532 /* ImageViewController.swift in Sources */,
+				BF80EDC9291308F2001DE532 /* CoursesTableViewController.swift in Sources */,
 				BF80EDAB29119BCE001DE532 /* AppDelegate.swift in Sources */,
 				BF80EDAD29119BCE001DE532 /* SceneDelegate.swift in Sources */,
+				BF80EDC729130892001DE532 /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

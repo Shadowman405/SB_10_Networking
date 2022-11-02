@@ -69,6 +69,13 @@ class MainCollectionViewController: UICollectionViewController {
 
 extension MainCollectionViewController {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCourses" {
+            let coursesTVC = segue.destination as! CoursesTableViewController
+            coursesTVC.fetchCourse()
+        }
+    }
+    
     
 // MARK: - Alert Controllers
     
